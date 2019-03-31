@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Otc-wf-8qa">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="MAf-FW-uNa">
+            <objects>
+                <navigationController id="Otc-wf-8qa" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Vb-sf-20W">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="hM3-bO-xw6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xIA-Zj-Tc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-722" y="132"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Homework_29032019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView hidden="YES" opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="p2v-56-Pii">
+                                <rect key="frame" x="10" y="123" width="137" height="158"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b0A-Sq-Vme">
+                                        <rect key="frame" x="0.0" y="0.0" width="137" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Go to first"/>
+                                        <connections>
+                                            <action selector="touchMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="AtE-pv-ue4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Y4-hh-Z1w">
+                                        <rect key="frame" x="0.0" y="61" width="137" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Go to second">
+                                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touchMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dMf-v8-cHH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SND-DC-2fh">
+                                        <rect key="frame" x="0.0" y="122" width="137" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="Go to third">
+                                            <color key="titleColor" red="0.30840110780000002" green="0.5618229508" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="touchMenuButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nQm-XK-V8O"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5W8-z2-Ch5">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="mainButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="awB-wW-5q7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5W8-z2-Ch5" firstAttribute="top" secondItem="1I0-Je-4hf" secondAttribute="top" id="9O5-5Z-b89"/>
+                            <constraint firstItem="5W8-z2-Ch5" firstAttribute="leading" secondItem="1I0-Je-4hf" secondAttribute="leading" id="Jv2-9r-XAD"/>
+                            <constraint firstItem="p2v-56-Pii" firstAttribute="top" secondItem="1I0-Je-4hf" secondAttribute="top" constant="59" id="L54-KM-idn"/>
+                            <constraint firstItem="1I0-Je-4hf" firstAttribute="bottom" secondItem="p2v-56-Pii" secondAttribute="bottom" constant="386" id="OPx-Ts-McV"/>
+                            <constraint firstItem="1I0-Je-4hf" firstAttribute="trailing" secondItem="p2v-56-Pii" secondAttribute="trailing" constant="228" id="Xcl-ii-e9S"/>
+                            <constraint firstItem="p2v-56-Pii" firstAttribute="leading" secondItem="1I0-Je-4hf" secondAttribute="leading" constant="10" id="aFN-Ds-wuy"/>
+                            <constraint firstItem="5W8-z2-Ch5" firstAttribute="trailing" secondItem="1I0-Je-4hf" secondAttribute="trailing" id="lhN-Wk-qeJ"/>
+                            <constraint firstItem="5W8-z2-Ch5" firstAttribute="bottom" secondItem="1I0-Je-4hf" secondAttribute="bottom" id="y7o-TG-PJf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="1I0-Je-4hf"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="a5a-2g-qy3">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="hamburger" id="8zJ-v5-ILP">
+                            <connections>
+                                <action selector="hamburgerMenuPressed:" destination="BYZ-38-t0r" id="Px3-jq-K1U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="mainButton" destination="5W8-z2-Ch5" id="3Sh-xM-dcG"/>
+                        <outlet property="mainButtonLeading" destination="Jv2-9r-XAD" id="W0d-OL-bfb"/>
+                        <outlet property="mainButtonTrailing" destination="lhN-Wk-qeJ" id="ppR-Tm-evh"/>
+                        <outlet property="stackView" destination="p2v-56-Pii" id="8eo-7U-D1x"/>
+                        <outletCollection property="menuButtons" destination="b0A-Sq-Vme" collectionClass="NSMutableArray" id="ddQ-az-api"/>
+                        <outletCollection property="menuButtons" destination="0Y4-hh-Z1w" collectionClass="NSMutableArray" id="ItG-9f-aTR"/>
+                        <outletCollection property="menuButtons" destination="SND-DC-2fh" collectionClass="NSMutableArray" id="6Uf-HW-VDb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="131.78410794602701"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hamburger" width="220" height="220"/>
+    </resources>
+</document>
